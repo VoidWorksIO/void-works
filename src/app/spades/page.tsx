@@ -38,10 +38,10 @@ export const metadata: Metadata = {
 
 const technologies = [
   { name: 'Next.js', color: 'bg-white/10 text-white border-white/20' },
-  { name: 'TypeScript', color: 'bg-blue-500/10 text-blue-400 border-blue-500/20' },
+  { name: 'TypeScript', color: 'bg-white/10 text-white border-white/20' },
   { name: 'Vercel', color: 'bg-white/10 text-white border-white/20' },
-  { name: 'PostgreSQL', color: 'bg-blue-600/10 text-blue-300 border-blue-600/20' },
-  { name: 'Prisma', color: 'bg-indigo-500/10 text-indigo-300 border-indigo-500/20' },
+  { name: 'PostgreSQL', color: 'bg-white/10 text-white border-white/20' },
+  { name: 'Prisma', color: 'bg-white/10 text-white border-white/20' },
 ]
 
 export default function SpadesPage(): React.ReactNode {
