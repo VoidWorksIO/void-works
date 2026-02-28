@@ -17,7 +17,7 @@ export const products: Product[] = [
     description:
     'Improve your team\'s pointing poker sessions with our AI enhanced platform that integrates with Linear.',
     color: 'from-indigo-600/20 via-blue-500/20 to-purple-500/20',
-    url: 'https://spades.poker',
+    url: '/spades',
     linkText: 'Learn More',
   },
   {
