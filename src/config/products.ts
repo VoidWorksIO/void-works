@@ -33,8 +33,8 @@ export const products: Product[] = [
     icon: Code,
     description: 'A VS Code and Cursor IDE extension that auto-completes packages and highlights out of date dependencies.',
     color: 'from-emerald-600/20 via-teal-500/20 to-cyan-500/20',
-    url: 'https://marketplace.visualstudio.com/items?itemName=VoidWorks.trawl',
-    linkText: 'Install Extension',
+    url: 'https://github.com/VoidWorksIO/trawl',
+    linkText: 'See Repo',
   },
   {
     name: 'Shortcut Assistant',
