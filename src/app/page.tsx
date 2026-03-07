@@ -76,6 +76,12 @@ export const metadata: Metadata = {
     'sprint planning',
     'agile estimation',
     'remote planning',
+    'vscode extension',
+    'cursor extension',
+    'IDE extension',
+    'package auto-complete',
+    'dependency management',
+    'outdated dependencies',
   ],
 }
 
@@ -138,6 +144,20 @@ export default function Home(): React.ReactNode {
       'applicationCategory': 'BusinessApplication',
       'description': 'Improve your team\'s pointing poker sessions with our AI enhanced platform that integrates with Linear.',
       'url': 'https://spades.poker',
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      'name': 'Trawl',
+      'applicationCategory': 'DeveloperApplication',
+      'operatingSystem': 'Windows, macOS, Linux',
+      'description': 'A VS Code and Cursor IDE extension that auto-completes packages and highlights out of date dependencies.',
+      'url': 'https://marketplace.visualstudio.com/items?itemName=VoidWorks.trawl',
+      'offers': {
+        '@type': 'Offer',
+        'price': '0',
+        'priceCurrency': 'USD',
+      },
     },
   ]
 
