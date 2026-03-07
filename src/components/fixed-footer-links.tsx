@@ -24,7 +24,7 @@ export function FixedFooterLinks(): React.ReactNode {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-30 transition-opacity duration-300">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto py-4">
         <div className="flex items-center justify-end gap-6">
           {footerLinks.map((link) => {
             const Icon = link.icon

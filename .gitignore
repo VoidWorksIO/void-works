@@ -20,6 +20,9 @@
 # production
 /build
 
+# editor / IDE (e.g. Local History)
+.history
+
 # misc
 .DS_Store
 *.pem
