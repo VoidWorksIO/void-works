@@ -14,10 +14,5 @@ export const footerLinks: FooterLink[] = [
     href: 'https://status.voidworks.io',
     icon: Activity,
     external: true,
-  },
-  {
-    label: 'Support',
-    href: 'mailto:support@voidworks.io',
-    icon: Mail,
-  },
+  }
 ]

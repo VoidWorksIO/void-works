@@ -1,4 +1,4 @@
-import { Chrome, LucideIcon, Smartphone, Vote } from 'lucide-react'
+import { ArrowBigUpDash, Chrome, LucideIcon, Smartphone, Vote } from 'lucide-react'
 
 
 export interface Product {
@@ -27,6 +27,14 @@ export const products: Product[] = [
     color: 'from-purple-600/20 via-violet-500/20 to-pink-500/20',
     url: 'https://apps.apple.com/us/app/gbx/id6749517571',
     linkText: 'Download on the App Store',
+  },
+  {
+    name: 'Trawl',
+    icon: ArrowBigUpDash,
+    description: 'A VSCode/Cursor extension that auto-completes package names and versions, and highlights outdated dependencies.',
+    color: 'from-green-600/20 via-lime-500/20 to-emerald-500/20',
+    url: 'https://marketplace.visualstudio.com/items?itemName=VoidWorks.trawl',
+    linkText: 'Learn More',
   },
   {
     name: 'Shortcut Assistant',
