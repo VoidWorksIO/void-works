@@ -1,6 +1,9 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+
+import { Widget as ProductlaneWidget } from '@/components/productlane/widget'
+
 import './globals.css'
 
 
@@ -30,6 +33,7 @@ function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <ProductlaneWidget />
         <Analytics />
       </body>
     </html>
