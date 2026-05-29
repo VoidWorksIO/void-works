@@ -16,14 +16,14 @@ function PrivacyPolicy(): React.ReactNode {
             </p>
 
             <h3 className="font-bold text-lg mb-2">
-              <strong>Introduction</strong>
+              Introduction
             </h3>
             <p className="mb-4">
               Welcome to the Privacy Policy for Shortcut Assistant, a Chrome extension designed to enhance your browsing experience. This policy outlines how we handle your personal information and your privacy rights. It covers our use of Google Analytics for anonymous usage statistics, a proxy service for AI features and authentication, Google sign-in, Sentry (or equivalent) for error and performance monitoring, and the optional use of your own OpenAI API key.
             </p>
 
             <h3 className="font-bold text-lg mb-2">
-              <strong>Data Collection Summary</strong>
+              Data Collection Summary
             </h3>
             <h4 className="font-semibold mb-2">Overview</h4>
             <p className="mb-4">
@@ -189,21 +189,21 @@ function PrivacyPolicy(): React.ReactNode {
             </div>
 
             <h3 className="font-bold text-lg mb-2">
-              <strong>User Consent</strong>
+              User Consent
             </h3>
             <p className="mb-4">
               By using Shortcut Assistant, you consent to: anonymous usage collection via Google Analytics; the optional provision of your own OpenAI API key stored locally on your device; forwarding of story descriptions and related data to our proxy server (when you use AI features or sign in without using your own API key for those requests); transmission of Google and Shortcut tokens when you register or authenticate; and anonymous error and performance data collection via Sentry or equivalent monitoring on our backend. If you do not agree, please discontinue use of the extension.
             </p>
 
             <h3 className="font-bold text-lg mb-2">
-              <strong>Changes to This Privacy Policy</strong>
+              Changes to This Privacy Policy
             </h3>
             <p className="mb-4">
               We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
             </p>
 
             <h3 className="font-bold text-lg mb-2">
-              <strong>Contact Us</strong>
+              Contact Us
             </h3>
             <p className="mb-4">
               If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at{' '}
