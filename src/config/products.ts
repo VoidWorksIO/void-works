@@ -1,4 +1,4 @@
-import { ArrowBigUpDash, Chrome, LucideIcon, Smartphone, Vote } from 'lucide-react'
+import { ArrowBigUpDash, Check, Chrome, LucideIcon, Smartphone, Vote } from 'lucide-react'
 
 
 export interface Product {
@@ -11,6 +11,14 @@ export interface Product {
 }
 
 export const products: Product[] = [
+  {
+    name: 'Checkmark',
+    icon: Check,
+    description: 'A to-do app built with keyboard power users in mind.',
+    color: 'from-green-600/20 via-green-500/20 to-green-600/20',
+    url: 'https://checkmark.day',
+    linkText: 'Learn More',
+  },
   {
     name: 'Spades',
     icon: Vote,
