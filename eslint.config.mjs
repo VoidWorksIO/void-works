@@ -17,20 +17,19 @@ const compat = new FlatCompat({
 
 export default [
   stylistic.configs.recommended,
+  nextPlugin.configs.recommended,
   ...fixupConfigRules(compat.extends(
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:import/warnings',
-    'plugin:import/typescript',
-    'plugin:@next/next/recommended'
+    'plugin:import/typescript'
   )), {
     plugins: {
       '@typescript-eslint': fixupPluginRules(typescriptEslint),
       'perfectionist': perfectionist,
       'import': fixupPluginRules(_import),
-      'yenz': fixupPluginRules(yenz),
-      '@next/next': fixupPluginRules(nextPlugin)
+      'yenz': fixupPluginRules(yenz)
     },
 
     languageOptions: {
@@ -48,6 +47,8 @@ export default [
       'perfectionist/sort-switch-case': 'off',
       '@stylistic/comma-dangle': 'off',
       '@stylistic/indent': 'off',
+      // Its autofix drops whitespace between inline text and elements.
+      '@stylistic/jsx-one-expression-per-line': 'off',
       '@stylistic/no-multiple-empty-lines': 'off',
       '@stylistic/no-trailing-spaces': ['error'],
       '@typescript-eslint/explicit-function-return-type': ['error', {
@@ -141,6 +142,12 @@ export default [
     }
   },
   {
-    ignores: ['src/components/ui/**'],
+    ignores: [
+      '.next/**',
+      'out/**',
+      'build/**',
+      'next-env.d.ts',
+      'src/components/ui/**'
+    ],
   }
 ]
