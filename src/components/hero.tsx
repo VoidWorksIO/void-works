@@ -1,16 +1,22 @@
-import React from 'react'
+import { CONTACT_HREF } from '@/config/links'
 
+
+const BUTTON_CLASS = 'inline-flex items-center rounded-lg px-5 py-3 text-sm/normal font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand'
 
 function Hero(): React.ReactNode {
   return (
-    <section className="py-32">
-      <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center space-y-6">
-          <h1 className="text-5xl md:text-7xl font-light tracking-tight bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent drop-shadow-sm">
-            Void Works
-          </h1>
-          <p className="text-lg text-gray-400 font-light">Products for the modern era</p>
-        </div>
+    <section id="top" className="flex max-w-[780px] flex-col gap-[26px] pt-[132px] pb-28">
+      <p className="font-mono text-xs/normal tracking-[0.12em] text-brand-soft uppercase">Void Works</p>
+      <h1 className="text-[clamp(38px,6vw,68px)] leading-[1.04] font-semibold tracking-[-0.03em] text-balance">
+        From browser extensions to mobile apps and web applications, we create tools that solve real-world problems.
+      </h1>
+      <div className="flex flex-wrap gap-3 pt-2.5">
+        <a href="#projects" className={`${BUTTON_CLASS} bg-brand-solid text-white hover:bg-brand-solid-hover`}>
+          See what we build
+        </a>
+        <a href={CONTACT_HREF} className={`${BUTTON_CLASS} border border-white/14 text-foreground hover:border-white/38`}>
+          Get in touch
+        </a>
       </div>
     </section>
   )
