@@ -10,6 +10,9 @@ const APP_NAME = 'Void Works'
 const APP_DESCRIPTION = 'Creating innovative solutions across platforms and technologies'
 const DEFAULT_URL = 'https://voidworks.io'
 
+// Regenerate daily so the footer's copyright year stays current.
+export const revalidate = 86400
+
 export const metadata: Metadata = {
   title: APP_NAME,
   description: APP_DESCRIPTION,

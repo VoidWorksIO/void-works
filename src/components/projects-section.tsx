@@ -13,7 +13,7 @@ export function ProjectsSection(): React.ReactNode {
         </h2>
         <span className="font-mono text-xs/normal text-muted-foreground">{count}</span>
       </div>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-5 pt-8">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(min(280px,100%),1fr))] gap-5 pt-8">
         {products.map((product, index) => (
           <ProjectCard key={product.name} product={product} index={index} />
         ))}

@@ -11,7 +11,7 @@ function Hero(): React.ReactNode {
         From browser extensions to mobile apps and web applications, we create tools that solve real-world problems.
       </h1>
       <div className="flex flex-wrap gap-3 pt-2.5">
-        <a href="#projects" className={`${BUTTON_CLASS} bg-brand text-white hover:bg-brand-hover`}>
+        <a href="#projects" className={`${BUTTON_CLASS} bg-brand-solid text-white hover:bg-brand-solid-hover`}>
           See what we build
         </a>
         <a href={CONTACT_HREF} className={`${BUTTON_CLASS} border border-white/14 text-foreground hover:border-white/38`}>

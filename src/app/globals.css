@@ -9,7 +9,8 @@
   --font-sans: var(--font-instrument-sans), system-ui, sans-serif;
   --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
   --color-brand: var(--brand);
-  --color-brand-hover: var(--brand-hover);
+  --color-brand-solid: var(--brand-solid);
+  --color-brand-solid-hover: var(--brand-solid-hover);
   --color-brand-soft: var(--brand-soft);
   --color-brand-softer: var(--brand-softer);
   --color-body-muted: var(--body-muted);
@@ -69,7 +70,9 @@
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.551 0.027 264.364);
   --brand: #5b6cf0;
-  --brand-hover: #6e7df5;
+  /* Deeper indigo for white-text surfaces: meets 4.5:1 contrast (base ~5.3:1, hover ~4.7:1) */
+  --brand-solid: #4c5ce6;
+  --brand-solid-hover: #5566eb;
   --brand-soft: #8e9bff;
   --brand-softer: #b4bdff;
   --body-muted: #a8a8b0;
@@ -130,7 +133,7 @@
     @apply bg-background text-foreground;
   }
   ::selection {
-    background: var(--brand);
+    background: var(--brand-solid);
     color: #ffffff;
   }
   @media (prefers-reduced-motion: no-preference) {
