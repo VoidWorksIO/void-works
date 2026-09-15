@@ -1,11 +1,9 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 
-import { AnimatedProductSection } from '@/components/animated-product-section'
-import { FixedFooterLinks } from '@/components/fixed-footer-links'
 import { Footer } from '@/components/footer'
-import { ScrollIndicator } from '@/components/scroll-indicator'
-import { Button } from '@/components/ui/button'
+import { Header } from '@/components/header'
+import { Hero } from '@/components/hero'
+import { ProjectsSection } from '@/components/projects-section'
 
 
 const APP_NAME = 'Void Works'
@@ -105,20 +103,6 @@ export default function Home(): React.ReactNode {
   const productSchemas = [
     {
       '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      'name': 'Shortcut Assistant',
-      'applicationCategory': 'BrowserApplication',
-      'operatingSystem': 'Chrome',
-      'description': 'Enhance your browsing experience with powerful keyboard shortcuts and productivity tools.',
-      'url': 'https://chromewebstore.google.com/detail/shortcut-assistant/kmdlofehocppnlkpokdbiaalcelhedef',
-      'offers': {
-        '@type': 'Offer',
-        'price': '0',
-        'priceCurrency': 'USD',
-      },
-    },
-    {
-      '@context': 'https://schema.org',
       '@type': 'MobileApplication',
       'name': 'GBx',
       'applicationCategory': 'HealthApplication',
@@ -142,7 +126,7 @@ export default function Home(): React.ReactNode {
   ]
 
   return (
-    <main className="min-h-screen bg-black">
+    <div className="min-h-screen text-base">
       {/* Structured Data */}
       <script
         type="application/ld+json"
@@ -160,48 +144,14 @@ export default function Home(): React.ReactNode {
         />
       ))}
 
-      {/* Hero Section with Background */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black z-10" />
-          <Image
-            src="/images/hero-background.jpg"
-            alt="Abstract technology background with modern design elements"
-            className="w-full h-full object-cover"
-            width={1920}
-            height={1080}
-            priority
-          />
-        </div>
-
-        <div className="container mx-auto px-4 py-24 relative z-20">
-          <div className="max-w-5xl space-y-8">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white leading-[1.1] text-balance">
-              Solutions that matter, designed thoughtfully.
-            </h1>
-            <p className="text-lg md:text-xl text-white/80 max-w-2xl leading-relaxed">
-              Building innovative solutions across platforms and technologies. From browser extensions to mobile apps and web
-              applications, we create tools that solve real-world problems.
-            </p>
-            <div className="flex gap-4 pt-4">
-              <Button asChild size="lg" className="bg-white text-black hover:bg-white/90">
-                <a href="mailto:hello@voidworks.io">Get in touch</a>
-              </Button>
-            </div>
-          </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <ScrollIndicator />
-      </section>
-
-      {/* Products Section */}
-      <section id="products" className="container mx-auto px-4 py-24 relative z-10">
-        <AnimatedProductSection />
-      </section>
-
-      <Footer />
-      <FixedFooterLinks />
-    </main>
+      <div className="mx-auto max-w-[1080px] px-8">
+        <Header />
+        <main>
+          <Hero />
+          <ProjectsSection />
+        </main>
+        <Footer />
+      </div>
+    </div>
   )
 }

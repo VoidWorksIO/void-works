@@ -1,5 +1,8 @@
-import { Activity, Mail } from 'lucide-react'
+import { Activity } from 'lucide-react'
 
+
+export const CONTACT_EMAIL = 'hello@voidworks.io'
+export const CONTACT_HREF = `mailto:${CONTACT_EMAIL}`
 
 export interface FooterLink {
   label: string

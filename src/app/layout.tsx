@@ -1,20 +1,21 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { IBM_Plex_Mono, Instrument_Sans } from 'next/font/google'
 
 import { Widget as ProductlaneWidget } from '@/components/productlane/widget'
 
 import './globals.css'
 
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const instrumentSans = Instrument_Sans({
+  variable: '--font-instrument-sans',
   subsets: ['latin'],
 })
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const ibmPlexMono = IBM_Plex_Mono({
+  variable: '--font-ibm-plex-mono',
   subsets: ['latin'],
+  weight: ['400', '500'],
 })
 
 export const metadata: Metadata = {
@@ -22,15 +23,11 @@ export const metadata: Metadata = {
   description: 'Developer tools for the modern era',
 }
 
-function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>): React.ReactNode {
+function RootLayout({children}: Readonly<{children: React.ReactNode}>): React.ReactNode {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${instrumentSans.variable} ${ibmPlexMono.variable} font-sans antialiased`}
       >
         {children}
         <ProductlaneWidget />
