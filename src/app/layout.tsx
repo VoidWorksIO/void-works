@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description: 'Developer tools for the modern era',
 }
 
-function RootLayout({children}: Readonly<{children: React.ReactNode}>): React.ReactNode {
+function RootLayout({ children }: Readonly<{ children: React.ReactNode }>): React.ReactNode {
   return (
     <html lang="en">
       <body

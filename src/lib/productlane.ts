@@ -29,6 +29,7 @@ export function openProductlaneFeedback(): void {
     catch (error) {
       // Silently fail if Productlane widget fails to open
       // We don't want feedback collection to cause additional errors
+      // eslint-disable-next-line no-console
       console.warn('Failed to open Productlane feedback widget:', error)
     }
   }
